@@ -13,29 +13,38 @@
 @import 'sidebar';
 @import 'comments';
 @import 'footer';
+@import 'header';
+@import 'featuredPost';
+@import 'postExcerpt';
+@import 'singlePost';
 /*
 ====================================
 Default Styling
 ====================================
 */
 
+html {
+	font-size: 62.5%;
+}
+
 img {
 	max-width: 100%;
 }
 
 body {
+	font-size: 16px;
+	font-size: 1.6rem;
 	color: #333;
 }
 
 .container {
-	max-width: 1200px;
+	max-width: 1100px;
 	margin: 0 auto;
 }
 
 .content {
-	float: left;
-	width: 65%;
-	margin-right: 5%;
+	margin: 0 auto;
+	width: 100%;
 }
 
 .full {

@@ -1,15 +1,37 @@
+$blue:#0A133A;
+$purple: #41429E;
+
+body {
+	font-family: 'Roboto', sans-serif;
+	color: $blue;
+}
+
 a {
-	color: #BA209B;
+	color: $blue;
 	text-decoration: none;
 	&:hover {
-		color: #D424B1;
+		color: $purple;
 	}
+}
+
+/* h1 */
+h1 a {
+	color: #FFFFFF;
+	font-size: 3rem;
+	margin:0;
+	text-shadow: 1px 1px 1px #616161;
+}
+
+h1, h2, h3, h4, h5 {
+	font-family: 'Lora', serif;
+	margin:0;
 }
 
 /* paragraphs */
 
 p {
 	line-height: 1.5;
+	margin:0;
 }
 
 /*blockquotes*/

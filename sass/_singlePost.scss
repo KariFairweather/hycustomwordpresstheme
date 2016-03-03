@@ -1,0 +1,33 @@
+article.single-post {
+	text-align: center;
+	padding:10px;
+	div.post-feature-img{
+		width: 100%;
+		img.attachment-large {
+			width:100%;
+		}
+	}
+	header.single-post-header {
+		div.author-profile-img img {
+			border: 1px solid white;
+			border-radius: 50%;
+		}
+		.article-header_author {
+			position: absolute;
+			left:15rem;
+		}
+	}
+	.wrapper {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content:center;
+		position: relative;
+	}
+	h1.entry-title {
+		font-size: 4.4rem;
+	}
+	main.content {
+		width: 100%;
+		margin:0 auto;
+	}
+}

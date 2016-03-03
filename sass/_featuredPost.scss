@@ -1,0 +1,30 @@
+.main {
+	position: relative;
+	img.attachment-large {
+		display: block;
+		margin:40px auto;
+	}
+	.overlay {
+		position: absolute;
+		margin: 0 auto;
+		top:0;
+		bottom:0;
+		left:0;
+		right:0;
+		padding-top: 10%;
+		width: 50%;
+		height: 100%;
+		text-align: center;
+		p {
+			font-size: 1rem;
+			font-style: italic;
+			color: #FFF;
+			text-shadow: 1px 1px 1px #616161;
+		}
+		a {
+			color: #FFF;
+			font-style: normal;
+			display: block;
+		}
+	}
+}

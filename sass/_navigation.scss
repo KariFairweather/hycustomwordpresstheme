@@ -1,5 +1,6 @@
 ul.menu {
 	margin: 0;
+	margin-left: 40px;
 	padding: 0;
 	li {
 		display: inline;
@@ -7,8 +8,7 @@ ul.menu {
 		a {
 			color: #333;
 			padding: 10px;
-			background: #333;
-			color: white;
+			color: $blue;
 		}
 	}
 }

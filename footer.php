@@ -1,7 +1,24 @@
 <footer>
   <div class="container">
-    <p>&copy; HackerYou <?php echo date('Y'); ?></p>
-  </div>
+		<a href="<?php echo home_url( '/' ); ?>" title="<?php bloginfo( 'name', 'display' ); ?>" rel="home">
+		  <div class="logo">
+		    <h1><?php bloginfo( 'name' ); ?></h1> 
+		  </div>
+		</a>
+	  <div class="social-media-links">
+	  	<?php wp_nav_menu( array(
+	  	  'container' => false,
+	  	  'theme_location' => 'social'
+	  	)); ?>
+	  </div><!-- social-media-links -->
+	  <nav>
+	      <?php wp_nav_menu( array(
+	        'container' => false,
+	        'theme_location' => 'footer'
+	      )); ?>
+	  </nav>
+	    <p>&copy; Kari Fairweather <?php echo date('Y'); ?></p>
+	  </div>
 </footer>
 
 <script>

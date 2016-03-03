@@ -22,7 +22,9 @@ function theme_setup() {
 	* You can allow clients to create multiple menus by
   * adding additional menus to the array. */
 	register_nav_menus( array(
-		'primary' => 'Primary Navigation'
+		'primary' => 'Primary Navigation',
+		'footer' => 'Footer Navigation',
+		'social' => 'Social Navigation'
 	) );
 
 	/*
@@ -46,6 +48,8 @@ function hackeryou_styles(){
 	wp_enqueue_style('style', get_stylesheet_uri() );
 
 	wp_enqueue_style('fontawesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css');
+
+	wp_enqueue_style('wpb-google-fonts', 'https://fonts.googleapis.com/css?family=Roboto|Lora', false);
 }
 
 add_action( 'wp_enqueue_scripts', 'hackeryou_styles');
@@ -126,7 +130,7 @@ add_filter( 'wp_page_menu_args', 'hackeryou_page_menu_args' );
  * Sets the post excerpt length to 40 characters.
  */
 function hackeryou_excerpt_length( $length ) {
-	return 40;
+	return 20;
 }
 add_filter( 'excerpt_length', 'hackeryou_excerpt_length' );
 
@@ -134,7 +138,7 @@ add_filter( 'excerpt_length', 'hackeryou_excerpt_length' );
  * Returns a "Continue Reading" link for excerpts
  */
 function hackeryou_continue_reading_link() {
-	return ' <a href="'. get_permalink() . '">Continue reading <span class="meta-nav">&rarr;</span></a>';
+	return ' <a class="continue-reading" href="'. get_permalink() . '">Continue reading</a>';
 }
 
 /**
@@ -275,4 +279,11 @@ function get_post_parent($post) {
 	else {
 		return $post->ID;
 	}
+}
+
+/* hackeryou_get_thumbnail_url: Return current post thumbnail url*/
+function hackeryou_get_thumbnail_url($post) {
+	$imageID = get_post_thumbnail_id($post->ID); 
+	$imageURL = wp_get_attachment_url($imageID);
+	return $imageURL;
 }

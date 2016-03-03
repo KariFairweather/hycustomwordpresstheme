@@ -1,0 +1,41 @@
+.content article.post {
+	margin: 2rem auto;
+	padding: 2rem 4rem;
+	border: .05rem solid grey;
+	div.wrapper {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: center; 
+		align-items: center; 
+		div.post-feature-img {
+			flex: 1 0 50%;
+			img.attachment-post-thumbnail {
+				display: block;
+			}
+		}
+		p.category {
+			text-transform: uppercase;
+			font-size: 1.5rem;
+		}
+		h2 {
+			font-size:3.2rem;
+		}
+		main.post-excerpt p {
+			font-style: italic;
+			padding: 0 2rem;
+		}
+		a.continue-reading {
+			display: block;
+			margin: 0 auto;
+			font-style: normal;
+			padding: .5rem 1rem;
+			width: 35%;
+			border: .05rem solid grey;
+			border-radius: .3rem;
+		}
+		div.inner-wrapper {
+			flex: 1 0 50%;
+			text-align: center;
+		}
+	}
+}

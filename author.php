@@ -33,9 +33,6 @@
       		get_template_part('loop', 'author');
       	?>
     </div> <!-- /.content -->
-
-    <?php get_sidebar(); ?>
-
   </div> <!-- /.container -->
 </div> <!-- /.main -->
 
