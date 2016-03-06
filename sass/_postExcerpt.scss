@@ -1,16 +1,19 @@
 .content article.post {
-	margin: 2rem auto;
-	padding: 3rem 3rem;
+	margin: 3.5rem auto 3.5rem;
+	padding: 3rem;
 	border: .05rem solid grey;
+	&:first-child {
+		margin: 9.5rem auto 3.5rem;
+	}
 	div.wrapper {
 		display: flex;
 		flex-flow: row wrap;
 		justify-content: center; 
 		align-items: center; 
 		div.post-img {
-			flex: 1 0 30%;
+			flex: 1 0 50%;
 			max-width:100%;
-			max-height:300px;
+			max-height:420px;
 			overflow: hidden;
 			img.attachment-post-thumbnail {
 				width:100%;
@@ -46,7 +49,7 @@
 			margin: 1rem auto;
 			font-style: normal;
 			padding: .5rem .5rem;
-			width: 30%;
+			width: 33%;
 			border: .05rem solid grey;
 			border-radius: .3rem;
 			transition: .5s all ease;
@@ -58,6 +61,9 @@
 		div.inner-wrapper {
 			flex: 1 0 50%;
 			text-align: center;
+		}
+		footer.footer-post {
+			padding-top:0;
 		}
 	}
 }

@@ -26,6 +26,7 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: 'Lora', serif;
 	margin:0;
 	color: #3f4346;
+	font-weight: lighter;
 }
 
 a h5 {
@@ -53,6 +54,7 @@ p {
 	font-size: 1.8rem;
 	line-height: 1.7;
 	margin:0;
+	font-weight: lighter;
 }
 
 /*blockquotes*/
@@ -61,6 +63,7 @@ blockquote {
 	background: #F7F7F7;
 	margin: 0;
 	padding: 20px;
+	font-style: italic;
 	p {
 		margin-top: 0;
 	}

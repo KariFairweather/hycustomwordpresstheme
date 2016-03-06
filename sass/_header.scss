@@ -1,21 +1,28 @@
-header {
-	padding-top: 2rem;
-	color: #0A133A;
+header.main-header {
+	position: fixed;
+	top: 0;
+	width:100%;
+	z-index: 2;
+	background-color: #FFF;
+	border-bottom: .15rem solid #F4EEEE;
+	padding-top: 5rem;
 	padding-bottom: 2rem;
+	color: #0A133A;
 	.container {
 		display: flex;	
 		justify-content: flex-end;
 		align-items: flex-end;
 		h3.logo {
-			flex: 1 0 40%;
+			flex: 1 0 15%;
 			text-align: right;
 		}
 		nav {
-			flex: 1 0 25%;
+			flex: 1 0 10%;
 		}
 	nav ul {	
 		text-align: left;
 		li a {
+			font-size: 1.4rem;
 			text-transform: uppercase;
 			background-color: transparent;
 			color: #0A133A;

@@ -2,11 +2,11 @@
 	position: relative;
 	div.post-feature-img{
 		width:100vw;
-		height: 90vh;
+		height: 95vh;
 		overflow: hidden;
 		img {
 			display: block;
-			margin: 0 auto;
+			margin: 10rem auto;
 		}
 	}
 	.overlay {
@@ -16,11 +16,12 @@
 		bottom:0;
 		left:0;
 		right:0;
-		padding-top: 8%;
+		padding-top: 14%;
 		width: 60%;
 		height: 100%;
 		text-align: center;
 		p.category {
+			text-transform: uppercase;
 			font-style: normal;
 			text-shadow:none;
 			width:11%;
@@ -57,14 +58,61 @@
 		}
 	}
 	section.feature-posts {
+		text-align: center;
 		h2.title {
-			text-align: center;
 			letter-spacing: .1rem;
 			margin: 0 auto;
 			width: 22%;
 			font-size: 5rem;
 			border-bottom: .5rem dotted $grey;
 			padding: 5rem 0 1rem;
+		}
+		article.post {
+			border: .05rem solid $grey;
+			margin: 3rem;
+			padding: 3rem;
+			display: flex;
+			flex-flow: row wrap;
+			align-items: center;
+			div.post-img {
+				flex: 1 0 50%;
+			}
+			div.inner-wrapper {
+				flex: 1 0 50%;
+			}
+		} 
+		p.category {
+			text-transform: uppercase;
+			font-size: 1.5rem;
+		}
+		h2.entry-title {
+			font-size:3.5rem;
+			line-height: 4.7rem;
+			letter-spacing: .2rem;
+			text-transform: capitalize;
+		}
+		div.post-excerpt p {
+			font-size: 1.5rem;
+			font-style: italic;
+			width:80%;
+			margin: 0 auto;
+			padding: .5rem 2rem;
+		}
+		a.continue-reading {
+			display: block;
+			font-size: 1.5rem;
+			text-transform: capitalize;
+			margin: 1rem auto;
+			font-style: normal;
+			padding: .5rem .5rem;
+			width: 34%;
+			border: .05rem solid grey;
+			border-radius: .3rem;
+			transition: .5s all ease;
+			&:hover {
+				background-color: $purple;
+				color:#FFF;
+			}
 		}
 	}
 }
