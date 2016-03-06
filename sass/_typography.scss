@@ -1,13 +1,13 @@
-$blue:#0A133A;
+$grey: #3f4346;
 $purple: #41429E;
 
 body {
 	font-family: 'Roboto', sans-serif;
-	color: $blue;
+	color:$grey;
 }
 
 a {
-	color: $blue;
+	color: $grey;
 	text-decoration: none;
 	&:hover {
 		color: $purple;
@@ -22,15 +22,36 @@ h1 a {
 	text-shadow: 1px 1px 1px #616161;
 }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, h6 {
 	font-family: 'Lora', serif;
 	margin:0;
+	color: #3f4346;
+}
+
+a h5 {
+	font-family: 'Roboto', sans-serif;
+	color: #78cdd4;
+	font-size: 1.8rem;
+	padding: 1.5rem 0 .5rem;
+	font-weight: lighter;
+	&:hover {
+		color: lighten(#78cdd4, 10);
+	}
+}
+
+h6 {
+	font-size: 2.4rem;
+	line-height: 3.5rem;
+	padding: 3rem 0 .5rem;
+	letter-spacing: .1rem;
+	font-style: italic;
 }
 
 /* paragraphs */
 
 p {
-	line-height: 1.5;
+	font-size: 1.8rem;
+	line-height: 1.7;
 	margin:0;
 }
 

@@ -11,12 +11,12 @@
 	  	  'theme_location' => 'social'
 	  	)); ?>
 	  </div><!-- social-media-links -->
-	  <nav>
+	  <div class="footer-menu">
 	      <?php wp_nav_menu( array(
 	        'container' => false,
 	        'theme_location' => 'footer'
 	      )); ?>
-	  </nav>
+	  </div>
 	    <p>&copy; Kari Fairweather <?php echo date('Y'); ?></p>
 	  </div>
 </footer>

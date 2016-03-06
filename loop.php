@@ -16,7 +16,7 @@
 
 	<article class="post" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 		<div class="wrapper">
-			<div class="post-feature-img">
+			<div class="post-img">
 				<?php $imgURL = hackeryou_get_thumbnail_url($post);?>
 				<img src="<?php echo $imgURL ?>" alt="">
 			</div>

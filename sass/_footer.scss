@@ -1,4 +1,36 @@
 footer {
 	clear: both;
 	text-align: center;
+	padding-top: 5rem;
+	div.social-media-links ul {
+		margin: 3rem auto 5rem;
+		padding: 0;
+		li {
+			margin: 0;
+
+		}
+		a {
+			padding:1rem;
+		}
+		i {
+			color:#FFF;
+			background-color: #00AEC1;
+			font-size: 2.5rem;
+			padding:1rem;
+			&:hover {
+				background-color: darken(#00AEC1,3)
+			}
+		}
+	}
+	div.footer-menu {
+		padding-bottom: 7rem;
+		ul li a {
+		color: #41429E;
+		font-weight: bold;
+		&:hover {
+			color: #000;
+			}
+		}
+	}
 }
+

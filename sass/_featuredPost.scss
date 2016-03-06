@@ -1,8 +1,13 @@
 .main {
 	position: relative;
-	img.attachment-large {
-		display: block;
-		margin:40px auto;
+	div.post-feature-img{
+		width:100vw;
+		height: 90vh;
+		overflow: hidden;
+		img {
+			display: block;
+			margin: 0 auto;
+		}
 	}
 	.overlay {
 		position: absolute;
@@ -11,20 +16,55 @@
 		bottom:0;
 		left:0;
 		right:0;
-		padding-top: 10%;
-		width: 50%;
+		padding-top: 8%;
+		width: 60%;
 		height: 100%;
 		text-align: center;
+		p.category {
+			font-style: normal;
+			text-shadow:none;
+			width:11%;
+			margin: 0 auto;
+			background-color: rgba(255,255,255,.5);
+		}
+		h1 a{
+			font-size: 6rem;
+			text-transform: capitalize;
+		}
 		p {
-			font-size: 1rem;
+			font-size: 1.6rem;
 			font-style: italic;
 			color: #FFF;
 			text-shadow: 1px 1px 1px #616161;
 		}
-		a {
+		a.continue-reading {
+			margin: 1.5rem auto;
+			padding: .5rem;
+			letter-spacing: .1rem;
 			color: #FFF;
-			font-style: normal;
 			display: block;
+			text-shadow: none;
+			border: .1rem solid #FFF;
+			border-radius: .2rem;
+			width: 25%;
+			font-style: normal;
+			text-transform: capitalize;
+			display: block;
+			background-color: rgba(0,0,0,.4);
+			&:hover {
+				background-color: rgba(65,66,158,.5);
+			}
+		}
+	}
+	section.feature-posts {
+		h2.title {
+			text-align: center;
+			letter-spacing: .1rem;
+			margin: 0 auto;
+			width: 22%;
+			font-size: 5rem;
+			border-bottom: .5rem dotted $grey;
+			padding: 5rem 0 1rem;
 		}
 	}
 }

@@ -15,18 +15,21 @@
 
 <header>
   <div class="container">
-    
-  <a href="<?php echo home_url( '/' ); ?>" title="<?php bloginfo( 'name', 'display' ); ?>" rel="home">
-    <div class="logo">
-      <h1><?php bloginfo( 'name' ); ?></h1> 
-    </div>
-  </a>
+    <a href="<?php echo home_url( '/' ); ?>" title="<?php bloginfo( 'name', 'display' ); ?>" rel="home">
+      <div class="logo">
+        <h1><?php bloginfo( 'name' ); ?></h1> 
+      </div>
+    </a>
     <nav>
       <?php wp_nav_menu( array(
         'container' => false,
         'theme_location' => 'primary'
       )); ?>
     </nav>
+    <form role="search" method="get" id="searchform" action="<?php bloginfo('url'); ?>">
+      <input type="search" placeholder="   " title="Search..." name="s" id="s" >
+      <i class="fa fa-search"></i>
+    </form>
   </div> <!-- /.container -->
 </header><!--/.header-->
 

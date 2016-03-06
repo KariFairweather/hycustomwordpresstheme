@@ -1,37 +1,59 @@
 .content article.post {
 	margin: 2rem auto;
-	padding: 2rem 4rem;
+	padding: 3rem 3rem;
 	border: .05rem solid grey;
 	div.wrapper {
 		display: flex;
 		flex-flow: row wrap;
 		justify-content: center; 
 		align-items: center; 
-		div.post-feature-img {
-			flex: 1 0 50%;
+		div.post-img {
+			flex: 1 0 30%;
+			max-width:100%;
+			max-height:300px;
+			overflow: hidden;
 			img.attachment-post-thumbnail {
+				width:100%;
 				display: block;
 			}
+		}
+		header.post-header {
+			width:80%;
+			margin: 0 auto;
+			padding-bottom:0;
 		}
 		p.category {
 			text-transform: uppercase;
 			font-size: 1.5rem;
 		}
 		h2 {
-			font-size:3.2rem;
+			font-size:3.5rem;
+			line-height: 4.7rem;
+			letter-spacing: .2rem;
+			text-transform: capitalize;
 		}
 		main.post-excerpt p {
+			font-size: 1.5rem;
 			font-style: italic;
-			padding: 0 2rem;
+			width:80%;
+			margin: 0 auto;
+			padding: .5rem 2rem;
 		}
 		a.continue-reading {
 			display: block;
-			margin: 0 auto;
+			font-size: 1.5rem;
+			text-transform: capitalize;
+			margin: 1rem auto;
 			font-style: normal;
-			padding: .5rem 1rem;
-			width: 35%;
+			padding: .5rem .5rem;
+			width: 30%;
 			border: .05rem solid grey;
 			border-radius: .3rem;
+			transition: .5s all ease;
+			&:hover {
+				background-color: $purple;
+				color:#FFF;
+			}
 		}
 		div.inner-wrapper {
 			flex: 1 0 50%;

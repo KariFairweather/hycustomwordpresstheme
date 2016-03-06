@@ -24,7 +24,9 @@ function theme_setup() {
 	register_nav_menus( array(
 		'primary' => 'Primary Navigation',
 		'footer' => 'Footer Navigation',
-		'social' => 'Social Navigation'
+		'social' => 'Social Navigation',
+		'author' => 'Author Social',
+		'share' => 'Share Article'
 	) );
 
 	/*
@@ -198,7 +200,7 @@ if ( ! function_exists( 'hackeryou_posted_on' ) ) :
  * Prints HTML with meta information for the current post—date/time and author.
  */
 function hackeryou_posted_on() {
-	printf('<span class="%1$s">Posted on</span> %2$s <span class="meta-sep">by</span> %3$s',
+	printf('<span class="%1$s"></span> %2$s <span class="meta-sep"></span> ',
 		'meta-prep meta-prep-author',
 		sprintf( '<a href="%1$s" title="%2$s" rel="bookmark"><span class="entry-date">%3$s</span></a>',
 			get_permalink(),
