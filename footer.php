@@ -17,8 +17,11 @@
 	        'theme_location' => 'footer'
 	      )); ?>
 	  </div>
-	    <p>&copy; Kari Fairweather <?php echo date('Y'); ?></p>
+	  <div class="site-info">
+		<p class="copyright">&copy; Kari Fairweather <?php echo date('Y'); ?></p>
+		<p class="disclaimer">Styled after the <a href="http://www.sonima.com/">Sonima</a> site. This project is not intended for commercial use.</p>
 	  </div>
+  </div>
 </footer>
 
 <script>

@@ -49,7 +49,7 @@
 			margin: 1rem auto;
 			font-style: normal;
 			padding: .5rem .5rem;
-			width: 33%;
+			width: 35%;
 			border: .05rem solid grey;
 			border-radius: .3rem;
 			transition: .5s all ease;
@@ -64,6 +64,277 @@
 		}
 		footer.footer-post {
 			padding-top:0;
+		}
+	}
+}
+
+//******************************
+// Media Queries
+//******************************
+@media (max-width: 1086px) {
+	.content article.post {
+		&:first-child {
+			margin: 10rem auto 3.5rem;
+		}
+		div.wrapper {		
+			a.continue-reading {
+				width: 36%;		
+			}
+		}
+	}
+}
+
+@media (max-width: 1061px) {
+	.content article.post {
+		div.wrapper {		
+			a.continue-reading {
+				width: 39%;		
+			}
+		}
+	}
+}
+
+@media (max-width: 993px) {
+	.content article.post {
+		div.wrapper {		
+			a.continue-reading {
+				width: 42%;		
+			}
+		}
+	}
+}
+
+@media (max-width: 932px) {
+	.content article.post {
+		div.wrapper {		
+			a.continue-reading {
+				width: 45%;		
+			}
+		}
+	}
+}
+
+@media (max-width: 881px) {
+	.content article.post {
+		div.wrapper {		
+			a.continue-reading {
+				width: 50%;		
+			}
+		}
+	}
+}
+
+@media (max-width: 809px) {
+	.content article.post {
+		div.wrapper {		
+			a.continue-reading {
+				width: 55%;		
+			}
+		}
+	}
+}
+
+@media (max-width: 780px) {
+	.content article.post {
+		&:first-child {
+			margin: 11rem auto 3.5rem;
+		}
+		div.wrapper {
+			div.post-img {
+				flex: 1 0 100%;
+				order: 4;
+			}
+			header.post-header {
+				width:100%;
+			}
+			a.continue-reading {
+				width: 28%;
+			}
+			div.inner-wrapper {
+				flex: 1 0 100%;
+				text-align: center;
+			}
+		}
+	}
+}
+
+@media (max-width: 780px) {
+}
+
+@media (max-width: 689px) {
+	.content article.post {
+		div.wrapper {		
+			a.continue-reading {
+				width: 30%;		
+			}
+		}
+	}
+}
+
+@media (max-width: 651px) {
+	.content article.post {
+		div.wrapper {		
+			a.continue-reading {
+				width: 36%;		
+			}
+		}
+	}
+}
+
+@media (max-width: 561px) {
+	.content article.post {
+		div.wrapper {		
+			a.continue-reading {
+				width: 43%;		
+			}
+		}
+	}
+}
+
+@media (max-width: 488px) {
+	.content article.post {
+		div.wrapper {		
+			a.continue-reading {
+				width: 45%;		
+			}
+		}
+	}
+}
+
+@media (max-width: 471px) {
+	.content article.post {
+		div.wrapper {		
+			a.continue-reading {
+				width: 49%;		
+			}
+		}
+	}
+}
+
+@media (max-width: 442px) {
+	.content article.post {
+		div.wrapper {		
+			a.continue-reading {
+				width: 52%;		
+			}
+		}
+	}
+}
+
+@media (max-width: 423px) {
+	.content article.post {
+		div.wrapper {		
+			a.continue-reading {
+				width: 55%;		
+			}
+		}
+	}
+}
+
+@media (max-width: 406px) {
+	.content article.post {
+		div.wrapper {		
+			a.continue-reading {
+				width: 59%;		
+			}
+		}
+	}
+}
+
+@media (max-width: 386px) {
+	.content article.post {
+		div.wrapper {		
+			a.continue-reading {
+				width: 61%;		
+			}
+		}
+	}
+}
+
+
+@media (max-width: 377px) {
+	.content article.post {
+		div.wrapper {		
+			a.continue-reading {
+				width: 64%;		
+			}
+		}
+	}
+}
+
+@media (max-width: 364px) {
+	.content article.post {
+		div.wrapper {		
+			a.continue-reading {
+				width: 66%;		
+			}
+		}
+	}
+}
+
+@media (max-width: 357px) {
+	.content article.post {
+		div.wrapper {		
+			a.continue-reading {
+				width: 70%;		
+			}
+		}
+	}
+}
+
+@media (max-width: 343px) {
+	.content article.post {
+		div.wrapper {		
+			a.continue-reading {
+				width: 73%;		
+			}
+		}
+	}
+}
+
+@media (max-width: 333px) {
+	.content article.post {
+		&:first-child {
+			margin: 14rem auto 3.5rem;
+		}
+		div.wrapper {		
+			a.continue-reading {
+				width: 75%;		
+			}
+		}
+	}
+}
+
+@media (max-width: 327px) {
+	.content article.post {
+		div.wrapper {		
+			a.continue-reading {
+				width: 79%;		
+			}
+		}
+	}
+}
+
+@media (max-width: 316px) {
+	.content article.post {
+		div.wrapper a.continue-reading {
+			width: 81%;		
+		}
+	}
+}
+
+@media (max-width: 311px) {
+	.content article.post {
+		div.wrapper a.continue-reading {
+			width: 85%;		
+		}
+	}
+}
+
+@media (max-width: 302px) {
+	.content article.post {
+		div.wrapper a.continue-reading {
+			width: 89%;		
 		}
 	}
 }

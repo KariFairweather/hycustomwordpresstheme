@@ -25,12 +25,47 @@ footer {
 	div.footer-menu {
 		padding-bottom: 7rem;
 		ul li a {
-		color: #41429E;
-		font-weight: bold;
-		&:hover {
-			color: #000;
+			color: #41429E;
+			font-weight: bold;
+			&:hover {
+				color: #000;
 			}
 		}
 	}
+	div.site-info {
+		padding-bottom: 1.7rem;
+		a {
+			color:$purple;
+		}
+	}
+	div.site-info p {
+		font-size: 1.5rem;
+		line-height: 1.9rem;
+	}
 }
 
+//******************************
+// Media Queries
+//******************************
+
+@media (max-width: 530px) {
+	footer {
+		padding:2rem;
+		div.social-media-links ul {
+			li {
+				padding:0;
+
+			}
+			a {
+				padding:.2rem;
+			}
+			i {
+				font-size: 1.8rem;
+				margin: .8rem;
+			}
+		}
+		div.footer-menu ul.menu {
+			margin-left: 0;
+		}
+	}
+}

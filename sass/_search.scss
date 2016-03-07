@@ -39,3 +39,76 @@ div.main-search {
 		}
 	}
 }
+
+//******************************
+// Media Queries
+//******************************
+@media (max-width:939px) {
+	div.main-search {
+		section.heading {
+		margin-top: 8.6rem;
+		}
+		div.search-results {
+			h1.results {
+				flex: 1 0 14%;
+			}
+			form {
+				flex: 1 0 20%;
+			}
+			form input[type=search] {
+				width:75%;
+			}
+		}
+	}
+}
+
+@media (max-width:670px) {
+	div.main-search {
+		section.heading {
+		margin-top: 8.6rem;
+		}
+		div.search-results {
+			h1.results {
+				flex: 1 0 21%;
+			}
+			form input[type=search] {
+				width:85%;
+			}
+		}
+	}
+} 
+
+@media (max-width:461px) {
+	div.main-search {
+		div.search-results {
+			h1.results {
+				flex: 1 0 100%;
+				text-align: center;
+				padding-bottom: 1rem;
+			}
+			form {
+				text-align: center;
+			}
+			form input[type=search] {
+				width:50%;
+				margin-bottom: 6.5rem;
+			}
+		}
+	}
+} 
+
+
+@media (max-width:357px) {
+	div.main-search {
+		div.search-results {
+			h1.results {
+				flex: 1 0 100%;
+				font-size: 3rem;
+			}
+			form input[type=search] {
+				font-size: 3rem;
+			}
+		}
+	}
+} 
+

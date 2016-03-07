@@ -15,7 +15,8 @@
 
 <header class="main-header">
   <div class="container">
-    <a href="<?php echo home_url( '/' ); ?>" title="<?php bloginfo( 'name', 'display' ); ?>" rel="home">
+    <a id="logo" href="<?php echo home_url( '/' ); ?>" title="<?php bloginfo( 'name', 'display' ); ?>" rel="home">
+      <!-- <a class="hamburger" href="#"><i class="fa fa-bars"></i></a> -->
       <div class="logo">
         <h1><?php bloginfo( 'name' ); ?></h1> 
       </div>
@@ -25,7 +26,7 @@
         'container' => false,
         'theme_location' => 'primary'
       )); ?>
-    </nav>
+    </nav> 
     <form role="search" method="get" id="searchform" action="<?php bloginfo('url'); ?>">
       <input type="search" placeholder="   " title="Search..." name="s" id="s" >
       <i class="fa fa-search"></i>

@@ -1,6 +1,13 @@
 $(function(){
 
-	console.log("It's working");
+	$('.hamburger').on('click', function(event){
+		///prevent browser from refreshing
+		event.preventDefault();
+		///check to see if our event is firing
+		console.log('it clicked')
+		///use the jquery slideToggle method to show our nav
+		$('#overlay').slideToggle();
+	});
 
 	// $( "#more" ).click(function() {
 	// 	// e.preventdefault();

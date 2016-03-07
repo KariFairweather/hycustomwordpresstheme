@@ -47,11 +47,11 @@
                     </div>
                 </div><!-- inner-wrapper -->
             </article><!-- #post-## -->
-                    <?php endwhile; ?>
-                    <?php wp_reset_postdata(); ?>
-                    <?php else:  ?>
-                    [stuff that happens if there aren't any posts]
-                    <?php endif; ?>
+                <?php endwhile; ?>
+                <?php wp_reset_postdata(); ?>
+                <?php else:  ?>
+                [stuff that happens if there aren't any posts]
+                <?php endif; ?>
         </div> <!-- /.container -->
     </section>
 </div><!-- main -->

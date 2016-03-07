@@ -2,7 +2,8 @@
 
 <div class="main">
     <div class="author-wrapper">
-      <div class="inner-wrapper"><div class="author-img">
+      <div class="inner-wrapper">
+        <div class="author-img">
           <?php echo get_avatar( get_the_author_meta('user_email'), 150); ?>
         </div><!-- author-img -->
         <div class="author-info" id="author-info">

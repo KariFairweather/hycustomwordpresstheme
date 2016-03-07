@@ -13,7 +13,10 @@ div.main {
 		div.author-img {
 			flex: 1 0 15%;
 			img {
-				max-width: 100%;
+				min-height: 150px;
+				min-width: 150px;
+				display: block;
+				margin: 0 auto;
 				border: .2rem solid #6ECBCF;
 				border-radius: 50%;
 			}
@@ -59,6 +62,9 @@ div.main {
 					color:lightgrey;
 				}
 			}
+			nav {
+				padding-left: 4rem;
+			}
 			li {
 				padding: 0;
 				margin: 0;
@@ -80,8 +86,7 @@ div.main {
 			position: relative;
 		}
 		div.post-img {
-			max-width: 360px;
-			max-height: 269px; 
+			max-width: 100%; 
 			overflow: hidden;
 		}
 		header.post-header {
@@ -101,6 +106,48 @@ div.main {
 		}
 	}	
 }
+
+//******************************
+// Media Queries
+//******************************
+
+@media (max-width: 1060px) {
+	div.main {
+		div.author-wrapper {
+			div.author-img {
+				flex: 1 0 0%;
+			}
+			div.author-info {
+				flex: 1 0 100%;
+				padding: 0 1rem;
+				order:4;
+			}
+			div.author-social {
+				flex: 1 0 70%;
+				order:1;
+				border-left: none;
+				p {
+					padding-left:.8rem;
+				}
+				nav {
+					padding-left: 0;
+				}
+				p, nav ul {
+					margin:0;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 400px){
+	div.main {
+		section.author-posts article.post {
+			flex: 1 0 100%;
+		}	
+	}
+}
+
 
 
 
